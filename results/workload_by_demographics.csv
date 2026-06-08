@@ -1,0 +1,26 @@
+metric,group,n,mean,ci95
+Pupil diameter (mm),Age 30s,22,4.0234,0.1742
+Pupil diameter (mm),Age 40s,26,3.8951,0.1542
+Pupil diameter (mm),Age 50s,18,3.9417,0.1832
+Pupil diameter (mm),Male,38,3.9195,0.111
+Pupil diameter (mm),Female,28,3.9928,0.1739
+ICA,Age 30s,22,0.1037,0.0108
+ICA,Age 40s,26,0.1019,0.0129
+ICA,Age 50s,18,0.1026,0.0126
+ICA,Male,38,0.1041,0.0098
+ICA,Female,28,0.1008,0.01
+Fixation duration (ms),Age 30s,22,425.6565,49.5387
+Fixation duration (ms),Age 40s,26,304.8012,41.2795
+Fixation duration (ms),Age 50s,18,297.828,33.2798
+Fixation duration (ms),Male,38,354.0607,36.1155
+Fixation duration (ms),Female,28,328.424,45.5703
+Saccade peak velocity,Age 30s,22,161.9266,10.7909
+Saccade peak velocity,Age 40s,26,154.9346,9.282
+Saccade peak velocity,Age 50s,18,152.6796,10.8791
+Saccade peak velocity,Male,38,156.2893,7.9846
+Saccade peak velocity,Female,28,157.1402,8.9139
+Saccade amplitude,Age 30s,22,5.1479,0.5737
+Saccade amplitude,Age 40s,26,4.233,0.6034
+Saccade amplitude,Age 50s,18,4.0467,0.5574
+Saccade amplitude,Male,38,4.5028,0.4436
+Saccade amplitude,Female,28,4.4659,0.5907

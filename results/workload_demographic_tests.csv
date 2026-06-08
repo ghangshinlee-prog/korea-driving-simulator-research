@@ -1,0 +1,6 @@
+metric,anova_F_age,anova_p_age,ttest_p_gender,age_sig,gender_sig
+Pupil diameter (mm),0.603,0.5503,0.4895,no,no
+ICA,0.024,0.9764,0.6522,no,no
+Fixation duration (ms),10.551,0.0001,0.3912,yes,no
+Saccade peak velocity,0.806,0.4511,0.8896,no,no
+Saccade amplitude,3.696,0.0304,0.9225,yes,no
