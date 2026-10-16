@@ -1,11 +1,9 @@
 # Korea Driving-Simulator Research — Driver Vision Workload & Road Safety
 
-Research conducted at the **University of Seoul ITS Lab (2021–2023)** during my
-M.S. in Smart Cities, using a driving simulator (UC-win/Road) with synchronized
-eye-tracking (Tobii Pro Glasses) to develop **objective measures of driver
-visual / cognitive workload** and apply them to road-safety problems.
+M.S. research (**University of Seoul ITS Lab, 2021–2023**) using a driving simulator (UC-win/Road) with synchronized eye-tracking (Tobii Pro Glasses) to build **objective measures of driver visual / cognitive workload** and apply them to road-safety problems.
 
 Author: **Ghangshin Lee** · Advisor: Prof. Dongmin Lee.
+**Stack:** Python · pandas · SciPy (ANOVA, t-tests) · matplotlib · eye-tracking signal processing
 
 ---
 
@@ -14,23 +12,17 @@ Author: **Ghangshin Lee** · Advisor: Prof. Dongmin Lee.
 | Output | Venue / status | Links |
 |---|---|---|
 | **M.S. Thesis** — *Development of Driving Vision-Workload Measures to Evaluate Safety Level* | University of Seoul, Feb 2023 | [PDF](docs/MS_Thesis_Lee2023_Driving_Vision_Workload_Measures.pdf) |
-| **Peer-reviewed paper** — *Improvements of Warning Signs for Black Ice Based on Driving Simulator Experiments* | *Int. J. Environ. Res. Public Health* (IJERPH), 2022, **19**, 7549 — Q1, open access | [DOI: 10.3390/ijerph19127549](https://doi.org/10.3390/ijerph19127549) |
+| **Peer-reviewed paper** — *Improvements of Warning Signs for Black Ice Based on Driving Simulator Experiments* | *IJERPH* 2022, **19**, 7549 — Q1, open access | [DOI: 10.3390/ijerph19127549](https://doi.org/10.3390/ijerph19127549) |
 | **Manuscript (in revision)** — driver visual-workload measures | 2023 draft → 2025 revision; presented Aug 2025 | — |
 | **Toll-plaza experiment** — visual workload & driving behavior | code + figures | [→ toll-plaza-driving-behavior](https://github.com/ghangshinlee-prog/toll-plaza-driving-behavior) |
 
-> The published black-ice study (IJERPH 2022) is cited here by DOI; its raw
-> experimental data is held under the original lab/IRB terms and is not part of
-> this public repository.
+> The published black-ice study is cited by DOI; its raw experimental data is held under the original lab/IRB terms and is not part of this public repository.
 
 ---
 
 ## What's in this repo
 
-The thesis developed eye-tracking workload measures — **pupil diameter**, the
-**Index of Cognitive Activity (ICA = |Δ pupil diameter|)**, **fixation duration**,
-and **saccade velocity / amplitude**. This repo adds an analysis angle not covered
-in the toll-plaza repo: **how those measures vary by driver age and gender**, which
-matters for evaluating differential safety risk.
+The thesis developed eye-tracking workload measures — **pupil diameter**, the **Index of Cognitive Activity (ICA = |Δ pupil diameter|)**, **fixation duration**, and **saccade velocity / amplitude**. This repo adds an angle not covered in the toll-plaza repo: **how those measures differ by driver age and gender** — directly relevant to differential safety risk.
 
 ### Selected figures
 
@@ -38,13 +30,13 @@ matters for evaluating differential safety risk.
 |---|---|
 | ![](figures/01_workload_by_age.png) | ![](figures/02_workload_by_gender.png) |
 
-### Key findings (66 drivers; ages 30s/40s/50s; both genders)
+### What the data shows (66 drivers; ages 30s/40s/50s; both genders)
 
 | Measure | Age effect | Gender effect |
 |---|---|---|
-| **Fixation duration** | **Significant** — declines from ~425 ms (30s) to ~300 ms (50s); one-way ANOVA *F* = 10.6, **p < 0.001** | n.s. |
-| **Saccade amplitude** | **Significant** (*p* = 0.03) | n.s. |
-| Pupil diameter, ICA, saccade peak velocity | not significant | not significant |
+| **Fixation duration** | **Significant** — falls from ~425 ms (30s) to ~300 ms (50s); ANOVA p < 0.001 | n.s. |
+| **Saccade amplitude** | **Significant** (p = 0.03) | n.s. |
+| Pupil diameter, ICA, saccade peak velocity | n.s. | n.s. |
 
 Full tables: [`results/`](results/).
 
@@ -65,9 +57,7 @@ python analysis/01_workload_by_demographics.py
 
 ## Methods
 
-Driving simulator (UC-win/Road) + Tobii Pro Glasses eye-tracking ·
-Index of Cognitive Activity (ICA) · per-driver aggregation before group stats ·
-one-way ANOVA · Welch's t-test.
+Driving simulator (UC-win/Road) + Tobii Pro Glasses · Index of Cognitive Activity (ICA) · per-driver aggregation before group stats · one-way ANOVA · Welch's t-test.
 
 ## Repository layout
 
@@ -80,6 +70,4 @@ figures/     Publication-style charts
 
 ## License
 
-Code under the [MIT License](LICENSE). The thesis PDF is the author's own work,
-shared for academic/portfolio review. The IJERPH 2022 paper is © the authors,
-open access under CC BY (see the DOI link).
+Code under the [MIT License](LICENSE). The thesis PDF is the author's own work, shared for academic / portfolio review. The IJERPH 2022 paper is © the authors, open access under CC BY (see the DOI link).
